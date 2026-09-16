@@ -60,6 +60,17 @@ return [
             'report' => false,
         ],
 
+        'sharepoint' => [
+            'driver' => 'sharepoint',
+            'client_id' => env('GRAPH_CLIENT_ID'),
+            'client_secret' => env('GRAPH_CLIENT_SECRET'),
+            'tenant_id' => env('GRAPH_TENANT_ID'),
+            'drive_id' => env('SHAREPOINT_DRIVE_ID'),
+            'root_item_id' => env('SHAREPOINT_ROOT_ITEM_ID'),
+            'prefix' => '',
+            'throw' => true,
+        ],
+
     ],
 
     /*
